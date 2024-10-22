@@ -24,9 +24,13 @@ let FREQ = [1318.51, 1174.66, 1046.5, 987.767, 880, 783.991, 698.456, 659.255, 5
 let NOTES = ["E6", "D6", "C6", "B5", "A5", "G5", "F5", "E5", "D5", "C5", "B4", "A4", "G4", "F4", "E4", "D4", "C4", "B3", "A3", "G3", "F3"];
 
 let CLEF;
-
+window.onload = function() {
+    main();  // Call main after the DOM is fully loaded
+};
 function main() {
     CANVAS = document.getElementById("myCanvas");
+
+    console.log("Long time",CANVAS);
     fitToScreen();
 	
     addEventListeners();
